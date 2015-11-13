@@ -27,8 +27,8 @@ The main parts here are home.js and home-store.js
 
 ##### flow idea
 Event in component calls an action: ie, onClick={FooAction.login}  
-this triggers FooStore.login()
-All components listening to FooStore, call a method specified  
+this triggers FooStore.login().  
+All components listening to FooStore, call a method specified.    
 In that method, change the component's state to match the stores'  
 
 #### The gist:
