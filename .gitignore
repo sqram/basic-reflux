@@ -1,0 +1,19 @@
+## directories
+tmp/
+node_modules/
+dist/
+
+deploy.sh
+
+## OS files
+.DS_Store
+.DS_Store?
+Thumbs.db
+ethumbs.db
+
+
+## logs & databases
+
+*.log
+*.sql
+*.sqlite
