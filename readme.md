@@ -29,7 +29,7 @@ The main parts here are home.js and home-store.js
 Event in component calls an action: ie, onClick={FooAction.login}  
 this triggers FooStore.login().  
 All components listening to FooStore, call a method specified.    
-In that method, change the component's state to match the stores'  
+In that method, change the component's state to match the stores' state  
 
 #### The gist:
 1. You'll need a Reflux Action, Reflux Store, React Component
