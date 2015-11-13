@@ -42,7 +42,7 @@ In that method, change the component's state to match the stores' state
 
 4. Connect Components to Stores via mixins.
     * mixins: [Reflux.listenTo(MyStore, "sendMessage")], or,
-    * mixins: [Reflux.connect(MyStore, "sendMessages")]
+    * mixins: [Reflux.connect(MyStore, "stateToSetAutomatically")]
     * technically you are making the component listen to store  
       events. In the store, you call this.trigger(data_to_pass),  
       and the Component will respond, because you did either  
