@@ -1,4 +1,5 @@
-[Imgur](http://i.imgur.com/1i4bKcZ.jpg)
+![alt screenshot](http://i.imgur.com/1i4bKcZ.jpg)
+
 
 ### `This Git`
 **I wrote this for myself, so i can use as a quick refernece.**  
@@ -33,7 +34,7 @@ In that method, change the component's state to match the stores'
 #### The gist:
 1. You'll need a Reflux Action, Reflux Store, React Component
 2. Components call Action method directly
-   * <button onClick={MyAction.sendMessage}>
+   * &tt;button onClick={MyAction.sendMessage}&gt;
 
 3. Connect Stores to the Actions via listenables or listenTo
     * listenable: [MyAction],
