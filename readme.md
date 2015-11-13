@@ -40,7 +40,7 @@ In that method, change the component's state to match the stores' state
     * listenable: [MyAction],
     * or, this.listenTo(MyActions.foo, this.foo)
 
-4. Connect Components to Stores via mixins.
+4. Connect Components to Stores via mixins. Inside components:  
     * mixins: [Reflux.listenTo(MyStore, "sendMessage")], or,
     * mixins: [Reflux.connect(MyStore, "stateToSetAutomatically")]
     * technically you are making the component listen to store  
