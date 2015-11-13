@@ -2,7 +2,7 @@
 
 
 ### `This Git`
-**I wrote this for myself, so i can use as a quick refernece.**  
+**I wrote this for myself, so i can use as a quick reference.**  
 This Git shows a simple example of a reflux app to show  
 communication between unrelated components.  
 There are two main components: Home and Sidebar. They are  
