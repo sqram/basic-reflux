@@ -27,14 +27,15 @@ The main parts here are home.js and home-store.js
 
 ##### flow idea
 Event in component calls an action: ie, onClick={FooAction.login}  
-this triggers FooStore.login().  
-All components listening to FooStore, call a method specified.    
+this calls FooStore.login().  
+Somewhere inside FooStore.login, do this.trigger()  
+Now all components listening to FooStore, call a method specified.    
 In that method, change the component's state to match the stores' state  
 
 #### The gist:
 1. You'll need a Reflux Action, Reflux Store, React Component
 2. Components call Action method directly
-   * &tt;button onClick={MyAction.sendMessage}&gt;
+   * &lt;button onClick={MyAction.sendMessage}&gt;
 
 3. Connect Stores to the Actions via listenables or listenTo
     * listenable: [MyAction],
