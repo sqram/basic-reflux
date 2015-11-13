@@ -53,9 +53,9 @@ In that method, change the component's state to match the stores' state
 The components only care about the state of the stores.  
 Basically, you can't map a store's signal to a component's  
 method. In the component, you'll have, for example  
-mixins: [Reflux.listenTo(HomeStore, "updateCount")].  
-This means whenever HomeStore calls this.trigger(arg),   
-the component's updateCount(arg) will fire. And in updateCount,  
+mixins: [Reflux.listenTo(FooStore, this.updateCount)].  
+This means whenever FooStore calls this.trigger(arg),   
+the Foo component's updateCount(arg) will fire. And in updateCount,  
 you should make the component's state match the store's state  
 (which we pass via _arg_ in this.trigger(arg))
 
